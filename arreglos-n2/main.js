@@ -15,7 +15,6 @@ function numeros(){
     let promedio = suma/longitud
     console.log(promedio)
 
-
 }
 
 function calcular_prom(){
@@ -35,7 +34,5 @@ function calcular_prom(){
 
     let promedio = suma/longitud 
     console.log(promedio)
-
-
 
 }
