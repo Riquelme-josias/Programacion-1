@@ -1,6 +1,6 @@
 import Vehiculo from "./vehiculo.js";
 
-const mostrar = () =>{
+const mostrar = () => {
     const marca = document.getElementById("inp_1").value
     const km = document.getElementById("inp_2").value
     

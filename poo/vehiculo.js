@@ -2,6 +2,7 @@ export default class Vehiculo {
 
     marca;
     km;
+    
     constructor(m,k){
         this.marca = m
         this.km = k

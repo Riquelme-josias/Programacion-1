@@ -1,19 +1,13 @@
-export default class area {
+export default class Triangulo {
 
-    bs;
-    bi;
+    b;
     al;
 
-    constructor(){
-        this.marca = m
-        this.km = k
+    constructor(){}
 
+    calcular_area(){
+        const area = ( Number(this.b) + Number(this.al) )/2
+        return area
     }
-
-    mostrar_datos(){
-        console.log(`
-            marca; ${this.marca}
-            kilometraje: ${this.km}
-        `)
-    }
+    
 }
