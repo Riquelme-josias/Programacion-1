@@ -1,5 +1,4 @@
 //crear un arreglo
-//porfa no agregar menta granizada
 let helados = ["cereza","banana split","limon","ferrero rocher","dulce leche",]
 
 //mostrar longitud de un arreglo
