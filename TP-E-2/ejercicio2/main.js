@@ -19,7 +19,7 @@ function mostrar(){
     document.getElementById("h_titulo2").textContent = ultimo_elemento
 
     const indice = moneda_v.indexOf("Helium")
-    document.getElementById("h_titulo3").textContent = indice
+    document.getElementById("h_titulo3").textContent = moneda_v[indice]
 
 
 }

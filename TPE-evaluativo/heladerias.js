@@ -45,7 +45,9 @@ export default class Heladeras{
         listado_producto.forEach( (element,index) => {
             let fila = `
                 <tr>
-                    <td>${element.imagen}</td>
+                    <td>
+                        <img style="width:4rem" src="${element.imagen}" class="img-fluid"></img>
+                    </td>
                     <td>${element.descripcion}</td>
                     <td>${element.precio}</td>
                     <td>
@@ -60,6 +62,8 @@ export default class Heladeras{
         document.getElementById("tbody").innerHTML = filas.join('')
     }
 
+    
+
     eliminar_producto(index){
 
         let lista_pro = JSON.parse(localStorage.getItem("listado_producto"))
@@ -71,17 +75,17 @@ export default class Heladeras{
         this.obtener_producto()
     }
 
-    actualizar_producto(){
+    actualizar_producto(index){
         //fui a buscar el listado de clientes al storage
        let listado_producto = JSON.parse(localStorage.getItem("listado_producto"))
 
-        listado_producto[index].imagen = dcument.getElementById("inp_url").value
-        listado_producto[index].descripcion = dcument.getElementById("inp_descripcion").value
-        listado_producto[index].precio = dcument.getElementById("inp_precio").value
+        listado_producto[index].imagen = document.getElementById("inp_url").value
+        listado_producto[index].descripcion = document.getElementById("inp_descripcion").value
+        listado_producto[index].precio = document.getElementById("inp_precio").value
 
         localStorage.setItem("listado_producto", JSON.stringify(listado_producto))
-        //volvemos a reconstruir la tabla
-        this.obtener_producto()
 
+        this.obtener_producto()
+    
     }
 }

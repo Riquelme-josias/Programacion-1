@@ -31,7 +31,8 @@ document.getElementById("btn_eliminar").addEventListener("click", eliminar)
 function actualizar(){
 
     let index = localStorage.getItem("indice_update")
-    let hela = new hela()
+    let hela = new Heladeras()
     hela.actualizar_producto(index)
 
 }
+document.getElementById("btn_actualizar").addEventListener("click",actualizar)

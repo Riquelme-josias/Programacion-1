@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Localstorage</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
+    
     <nav class="navbar navbar-dark btn-danger">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TP3 - Evaluativo</a>
+            <a class="navbar-brand" href="#">Poo3</a>
         </div>
     </nav>
 
@@ -22,43 +22,47 @@
 
             <div class="col-lg-4">
 
-                <h4>Heladerias</h4>
-
                 <div class="mb-3">
-                    <label class="form-label">Producto</label>
-                    <input id="inp_descripcion" class="form-control" type="text" placeholder="ingresar Descripcion">
+                    <label class="form-label">Nombre</label>
+                    <input id="inp_nombre" class="form-control" type="text" placeholder="ingresar Nombre">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">precio del producto</label>
-                    <input id="inp_precio" class="form-control" type="text" placeholder="ingresar Precio">
+                    <label class="form-label">Apellido</label>
+                    <input id="inp_apellido" class="form-control" type="text" placeholder="ingresar Apellido">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Imagen</label>
-                    <input id="inp_url" class="form-control" type="text" placeholder="ingresar URL">
+                    <label class="form-label">DNI</label>
+                    <input id="inp_dni" class="form-control" type="number" placeholder="ingresar DNI">
                 </div>
 
                 <button id="btn_mostrar" class="btn btn-outline-danger">Guardar</button>
-
-                <button style="display:none" id="btn_actualizar" class="btn btn-outline-danger">Actualizar</button>
 
             </div>
             <div class="col-lg-8">
 
                 <table class="table">
                     <thead>
-                        <th>imagen</th>
-                        <th>Descripcion</th>
-                        <th>Precio</th>
+
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+
                     </thead>
                     <tbody id="tbody">
+                    
+
 
 
 
                     </tbody>
                 </table>
+                
+
             </div>
+
         </div>
     </div>
+    
 
     <div id="mymodal" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -68,7 +72,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>¿Esta seguro que quiere eliminar este producto?</p>
+                <p>¿Esta seguro que quiere eliminar a este cliente?</p>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
@@ -78,9 +82,11 @@
         </div>
     </div>
 
+
     <script src="main.js" type="module"></script>
     <script src="bootstrap.bundle.min.js"></script>
     <script src="auxiliar.js"></script>
+    
 
 </body>
 </html>
