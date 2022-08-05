@@ -20,7 +20,6 @@ function mostrar(){
 
     const indice = librerias_css.indexOf("Bulma")
     document.getElementById("h_titulo3").textContent = librerias_css[indice]
-
 }
 boton = document.getElementById("btn_mostrar").addEventListener("click",mostrar)
 function arreglo (){
