@@ -1,27 +1,41 @@
-let moneda_v = ['Bitcoin','Ethereum','Tether','BNB','Cardano','Dai','Helium','Shiba Inu','Tron','Cronos','Solana']
+let librerias_css = ['Bootstrap','materialize','Bulma','Tailwind','Pure','Pico CSS','Skeleton','Primer']
 
-moneda_v.unshift("Stellar")
-console.log(moneda_v)
+librerias_css.unshift("Spectre")
+console.log(librerias_css)
 
-let indice = moneda_v.indexOf("Shiba Inu")
-moneda_v.splice(indice,2)
-console.log(moneda_v)
+let indice = librerias_css.indexOf("Pure")
+librerias_css.splice(indice,2)
+console.log(librerias_css)
 
-moneda_v.push("Gate")
-console.log(moneda_v)
+librerias_css.push("Milligram")
+console.log(librerias_css)
 
 function mostrar(){
 
-    const longitud = moneda_v.length
+    const longitud = librerias_css.length
     document.getElementById("h_titulo1").textContent = longitud
 
-    const ultimo_elemento = moneda_v[moneda_v.length-1]
+    const ultimo_elemento = librerias_css[librerias_css.length-1]
     document.getElementById("h_titulo2").textContent = ultimo_elemento
 
-    const indice = moneda_v.indexOf("Helium")
-    document.getElementById("h_titulo3").textContent = moneda_v[indice]
-
+    const indice = librerias_css.indexOf("Bulma")
+    document.getElementById("h_titulo3").textContent = librerias_css[indice]
 
 }
+boton = document.getElementById("btn_mostrar").addEventListener("click",mostrar)
+function arreglo (){
 
-boton = document.getElementById("btn_a").addEventListener("click",mostrar)
+
+    let lista =[]
+    librerias_css.forEach(element => {
+        let li = `
+        <li class="list-group-item">${element}</li>
+        `
+        lista.push(li)
+    }); 
+
+    document.getElementById("mostrar").innerHTML= lista.join('')
+}
+
+
+
